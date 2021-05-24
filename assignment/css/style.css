@@ -1,0 +1,106 @@
+
+        .divHome h1,p {
+            text-align: center;
+        }
+
+        body {
+            background: url(../images/imgback.jpg) no-repeat;
+            background-size: cover;
+        }
+
+        
+        input[type=text],input[type=number],input[type=date],input[type=tel] {
+            width: 40%;
+            padding: 12px;
+            border: 1px solid rgb(175, 173, 173);
+            border-radius: 6px;
+            resize: vertical;
+        }
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+}
+        input[type=submit] {
+            background-color: #627763;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: center;
+        }
+
+        input[type=submit]:hover {
+            background-color: #2c302c;
+        }
+        input[type=reset] {
+            background-color: #627763;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: center;
+        }
+
+        input[type=reset]:hover {
+            background-color: #2c302c;
+        }
+        .divHome {
+            background: url(../images/imgback.jpg) no-repeat;
+            background-size: cover;
+            border-radius: 5px;
+            padding: 20px;
+        }
+       
+        .col1Home {
+            float: left;
+             width: 25%;
+            margin-top: 6px;
+        }
+
+        .col2Home {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+/* Clear floats after the columns */
+        .rowHome:after {
+            content: "";
+            display: table;
+            clear: both;
+        }   
+        .rowHome1:after {
+            text-align: center;
+            content: "";
+            display: table;
+            clear: both;
+        } 
+        .rowHome2:after {
+            
+            text-align: center;
+            content: "";
+            display: table;
+            clear: both;
+        } 
+
+        .viewOrderData {
+            background-color: #f8f4e5;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        .updateDb {
+            background-color: #f8f4e5;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        .delOrder {
+            background-color: #f8f4e5;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+
+        

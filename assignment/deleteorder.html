@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Order</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="divHome">
+    <form action="./php/delete.php" method="POST" id="deleteOrder">
+        <h1>Delete Your Order </h1>
+        <p><em>Please provide your order id.</em></p>
+        <hr>
+        <div class="rowHome">
+            <div class="col1Home">
+                <label for="odr_id"><b>Order ID:</b></label>
+            </div>
+           <div class="col2Home">
+            <input type="number" placeholder="eg. 20" id ="odr_id" name="odr_id" required>
+           </div> 
+        </div>
+        <hr>
+        <div class="rowHome1">
+            <input type="submit" value="Delete">
+            <input type="reset">
+        </div>
+        </div>
+        </form>
+        <div id='responseforDelete' class="delOrder"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js "></script>
+        <script src="js/delete.js"></script>
+       
+</body>
+</html>

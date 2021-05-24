@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Order</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="divHome">
+    <form action="./php/update.php" method="POST" id="updateOrder">
+        <h1>Edit Your Order Details</h1>
+        <p><em>Please fill in the details.</em></p>
+        <hr>
+        <div class="rowHome">
+            <div class="col1Home">
+                <label for="odr_id"><b>Order ID:</b></label>
+            </div>
+           <div class="col2Home">
+            <input type="number" placeholder="eg. 20" id ="odr_id" name="odr_id" required>
+           </div> 
+        </div>
+        <div class="rowHome">
+            <div class="col1Home">
+                <label for="name"><b>Name:</b></label>
+            </div>
+           <div class="col2Home">
+            <input type="text" placeholder="Enter Name" id ="name" name="uname" required>
+           </div> 
+        </div>
+        <div class="rowHome">
+            <div class="col1Home">
+                <lable for="ph_num"><b>Phone Number:</b></lable>
+            </div>
+            <div class="col2Home">
+                <input type="tel" placeholder="eg. 9874235743" id="ph_num" name="ph_num" required>
+            </div>
+        </div>
+        <div class="rowHome">
+            <div class="col1Home">
+                <lable for="orders"><b>Todays Order:</b></lable>
+            </div>
+            <div class="col2Home">
+                <input type="number" placeholder="0" id="ph_num" name="orders" required>
+            </div>
+        </div>
+        <div class="rowHome">
+            <div class="col1Home">
+                <label for="date"><b>Date:</b>
+                </label>
+            </div>
+            <div class="col2Home">
+                <input type="date" id="date" name="date">
+            </div>
+        </div>
+        <hr>
+        <div class="rowHome1">
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </div>
+        </div>
+        </form>
+        <div id='responseforUpdate' class="updateDb"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js "></script>
+        <script src="js/update.js"></script>
+       
+</body>
+</html>
